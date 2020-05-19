@@ -1,6 +1,8 @@
 object LongestRepeatingSubstring extends App{
-  val s  = "aaa"
-  System.out.println(longestRepeatingSubstring(s))
+  val s  = scala.io.StdIn.readLine("Input String: ")
+  println(longestRepeatingSubstring(s))
+
+  //O(N) lookup time because in the worst cast we search the entire array.
 
     def longestRepeatingSubstring(s: String): String = {
       val strLen  = s.length
